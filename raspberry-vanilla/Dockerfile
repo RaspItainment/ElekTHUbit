@@ -17,6 +17,6 @@ RUN git config --global user.name "Build Server"
 
 
 COPY build /raspberry-vanilla
-WORKDIR build
+WORKDIR raspberry-vanilla
 
 CMD ["bash", "/raspberry-vanilla/build.sh"]
