@@ -3,8 +3,10 @@
 set -v
 set -e
 
-sudo apt install repo bc coreutils dosfstools e2fsprogs fdisk kpartx mtools ninja-build pkg-config python3-pip --yes
-sudo pip3 install meson mako jinja2 ply pyyaml dataclasses --yes
+export PATH="/sbin:$PATH"
+
+sudo -E apt install repo bc coreutils dosfstools e2fsprogs fdisk kpartx mtools ninja-build pkg-config python3-pip --yes
+sudo pip3 install meson mako jinja2 ply pyyaml dataclasses
 
 repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r22 --depth=1
 
