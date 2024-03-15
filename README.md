@@ -1,7 +1,7 @@
 # ElekTHUbit
 
 ```bash
-sudo apt update --yes && sudo apt install git --yes && git clone https://github.com/RaspItainment/ElekTHUbit.git && cd ElekTHUbit/setup/ && ./setup.sh
+sudo apt update --yes && sudo apt install git --yes && git clone https://github.com/RaspItainment/ElekTHUbit.git && cd ElekTHUbit/setup/ && sudo ./setup.sh
 ```
 
 Teamprojekt with Elektrobit
