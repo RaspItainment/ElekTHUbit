@@ -15,7 +15,6 @@ RUN pip3 install meson mako jinja2 ply pyyaml dataclasses --break-system-package
 RUN git config --global user.email "buildserver@buildsever.notld"
 RUN git config --global user.name "Build Server"
 
-
 COPY build /raspberry-vanilla
 WORKDIR raspberry-vanilla
 
