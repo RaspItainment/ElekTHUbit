@@ -3,12 +3,14 @@
 set -v
 set -e
 
-cp debian.sources /etc/apt/sources.list.d/debian.sources
+export DEBIAN_FRONTEND=noninteractive
 
-sudo apt update --yes
-sudo apt upgrade --yes
+sudo cp setup/debian.sources /etc/apt/sources.list.d/debian.sources
 
-cp authorized_keys .ssh/authorized_keys
+sudo -E apt update --yes
+sudo -E apt upgrade --yes
+
+cp setup/authorized_keys ~/.ssh/authorized_keys
 
 sudo mount /dev/vdb /mnt/vieeeeel-platz/
 sudo swapon /mnt/vieeeeel-platz/swapfile
