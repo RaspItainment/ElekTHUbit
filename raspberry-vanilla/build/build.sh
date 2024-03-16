@@ -3,6 +3,8 @@
 set -v
 set -e
 
+export PATH="/sbin:$PATH"
+
 echo "Y" | repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r22 --depth=1
 
 mkdir -p .repo/local_manifests
