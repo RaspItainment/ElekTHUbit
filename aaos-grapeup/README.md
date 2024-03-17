@@ -3,11 +3,11 @@
 ## Build docker image
 
 ```bash
-docker build -t rv-image .
+docker build -t grapeup-image .
 ```
 
 ## Run docker container
 
 ```bash
-docker run -d --name rv-container --privileged -it rv-image
+docker run -d --name grapeup-container --privileged -it grapeup-image
 ```
