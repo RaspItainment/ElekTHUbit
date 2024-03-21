@@ -1,5 +1,7 @@
 # aaos-grapeup build
 
+This builds AAOS version 13.0
+
 ## Build docker image
 
 ```bash
