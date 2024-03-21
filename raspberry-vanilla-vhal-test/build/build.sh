@@ -12,8 +12,8 @@ cp ./manifest_brcm_rpi.xml ./remove_projects.xml .repo/local_manifests/
 
 repo sync -c -j 8
 
-rm -rf hardware/interfaces/automotive/vehicle/aidl/impl/fake_impl/
-git clone https://github.com/Raspitainment/vhal-test.git hardware/interfaces/automotive/vehicle/aidl/impl/fake_impl
+rm -rf hardware/interfaces/automotive/vehicle/aidl/impl
+git clone https://github.com/Raspitainment/vhal-test.git hardware/interfaces/automotive/vehicle/aidl/impl
 
 . build/envsetup.sh
 
