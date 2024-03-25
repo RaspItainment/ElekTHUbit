@@ -12,8 +12,10 @@ cp ./manifest_brcm_rpi.xml ./remove_projects.xml .repo/local_manifests/
 
 repo sync -c -j 8
 
-rm -rf hardware/interfaces/automotive/vehicle/aidl/impl
-git clone https://github.com/Raspitainment/vhal-test.git hardware/interfaces/automotive/vehicle/aidl/impl
+pushd hardware/interfaces/
+git remote set-url aosp https://github.com/Raspitainment/vhal-test.git
+git pull aosp main
+popd
 
 . build/envsetup.sh
 
