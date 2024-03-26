@@ -16,9 +16,8 @@ pushd ./hardware/interfaces/
 git remote set-url aosp https://github.com/Raspitainment/vhal-test.git
 git fetch aosp
 git add .
-git reset --hard HEAD
+git reset --hard aosp/main
 popd
-
 
 . build/envsetup.sh
 
