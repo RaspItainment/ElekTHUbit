@@ -1,3 +1,1 @@
-# ElekTHUbit
-
-Teamprojekt with Elektrobit
+# Build
