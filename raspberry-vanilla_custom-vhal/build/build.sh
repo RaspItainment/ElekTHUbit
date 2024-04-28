@@ -13,7 +13,7 @@ cp ./manifest_brcm_rpi.xml ./remove_projects.xml .repo/local_manifests/
 repo sync -c -j 8
 
 pushd ./hardware/interfaces/
-git remote set-url aosp https://github.com/Raspitainment/vhal-test.git
+git remote set-url aosp https://github.com/Raspitainment/custom-vhal.git
 git fetch aosp
 git add .
 git reset --hard aosp/main
